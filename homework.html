@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>homework</title>
+	<style type="text/css">
+		#div1
+		{
+			width: 50px;
+			height: 50px;
+			background: red;
+		}
+		#div2
+		{
+			width: 50px;
+			height: 50px;
+			background: blue;
+		}
+		@keyframes myfirst
+		{
+			0%   {background:red; left:0px; top:0px;}
+			100%  {background:red; left:100px; top:0px;}
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		function change()
+		{
+			var red=document.getElementById('div1')
+			var blue=document.getElementById('div2')
+			red.style.width='50px';
+			red.style.height='50px';
+			red.style.background="red";
+			red.style.position='relative';
+			red.style.animation='myfirst 2s';
+			blue.style.transform='rotate(45deg)';
+		}
+
+	</script>
+</head>
+<body>
+<div id="div1"></div>
+<div id="div2"></div>
+<button onclick="change()">click to change</button>
+</body>
+</html>
